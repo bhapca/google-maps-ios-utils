@@ -5,8 +5,6 @@ Pod::Spec.new do |s|
   s.summary      = "A QuadTree library for use with Google Maps iOS SDK."
   s.description  = <<-DESC
                    This library enables you to store geographic points in a QuadTree.
-                   It is designed to be used with Google Maps iOS SDK, but it is not
-                   dependent on it.
                    DESC
   s.homepage     = "https://github.com/googlemaps/google-maps-ios-utils"
   s.license      = { :type => 'Apache 2.0', :file => 'LICENSE' }
@@ -16,5 +14,5 @@ Pod::Spec.new do |s|
 		     :tag => "0.1" }
   s.source_files = '{QuadTree,Clustering,Projection}/**/*.{h,m}'
   s.requires_arc = true
-
+  s.dependency 'GoogleMaps', '~> 1.12.2'
 end
